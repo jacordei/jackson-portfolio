@@ -3,133 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jackson Machado's professional portfolio showcasing education, projects, and resume." />
+  <meta name="description" content="Jackson Machado's Portfolio – A globally diverse communicator and marketer." />
   <title>Jackson Machado – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      background-color: #f7f7f7;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #f1f1f1);
       color: #333;
-      padding: 20px;
     }
     header {
+      background-color: #004080;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 20px 0;
-    }
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-    h1 {
-      font-size: 2.4em;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
     }
     section {
+      padding: 2rem;
       max-width: 900px;
-      margin: 0 auto 40px auto;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #00254d;
     }
     .education img, .projects img {
-      height: 40px;
+      width: 60px;
       vertical-align: middle;
       margin-right: 10px;
     }
-    .education p, .projects p {
-      margin-bottom: 10px;
-    }
-    .projects-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .projects-container a img {
-      width: 250px;
-      height: 140px;
-      border-radius: 10px;
+    .projects img {
+      width: 200px;
+      height: 120px;
       object-fit: cover;
-      transition: transform 0.3s;
+      margin-right: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
     }
-    .projects-container a:hover img {
+    .projects img:hover {
       transform: scale(1.05);
     }
     .resume-button {
       display: inline-block;
-      padding: 12px 24px;
-      background-color: #007bff;
+      padding: 0.8rem 1.2rem;
+      background-color: #0074d9;
       color: white;
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
-      margin-top: 15px;
-    }
-    .contact, .about {
-      margin-top: 30px;
-    }
-    .social a {
       text-decoration: none;
-      color: #007bff;
       font-weight: bold;
+      margin-top: 1rem;
     }
     footer {
       text-align: center;
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #666;
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: #e9ecef;
+    }
+    .about {
+      background-color: #ffffff;
+      border-left: 5px solid #0074d9;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+    }
+    .contact a {
+      color: #0074d9;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="IMG_1655.jpg" alt="Jackson Machado Profile Picture">
     <h1>Jackson Machado – Portfolio</h1>
   </header>
 
   <section class="about">
     <h2>About Me</h2>
-    <p>I’m Jackson Machado, a passionate communicator and digital strategist with international academic and work experience across Brazil and the U.S. I specialize in political science, marketing, and storytelling. With hands-on campaign work at Lew’Lara\TBWA and academic research in communication, I bring a global perspective and energy to every project I lead or support.</p>
+    <p>I am a globally-minded communicator with a background that blends marketing, international politics, and grassroots advocacy. I’ve worked as a Student Ambassador at IUPUI, helped coordinate a political campaign in Brazil, and served as a Digital Producer Intern at Lew’Lara\TBWA. My experiences span multiple cultures and languages, reflecting my passion for creativity, strategic messaging, and public service. I’m currently pursuing my Master of Science in Communication at Purdue University and love turning big ideas into impactful stories.</p>
   </section>
 
   <section class="education">
     <h2>Education</h2>
-    <p><img src="purdue-logo.png" alt="Purdue"> <strong>Purdue University</strong> – Master of Science in Communication (Expected 2025)</p>
-    <p><img src="iupui-logo.png" alt="IUPUI"> <strong>IUPUI</strong> – Bachelor of Arts in Political Science (2024)<br><em>Dean’s List, GPA: 3.83</em></p>
-    <p><img src="ivytech-logo.png" alt="Ivy Tech"> <strong>Ivy Tech Community College</strong> – Technical Certificate, General Education (2022)<br><em>Merit Scholarship Recipient</em></p>
+    <p><img src="purdue-logo.png" alt="Purdue Logo"> <strong>Purdue University</strong> – Master of Science in Communication (Expected 2025)</p>
+    <p><img src="iupui-logo.png" alt="IUPUI Logo"> <strong>IUPUI</strong> – Bachelor of Arts in Political Science (2024)<br><em>Dean’s List, GPA: 3.83</em></p>
+    <p><img src="ivytech-logo.png" alt="Ivy Tech Logo"> <strong>Ivy Tech Community College</strong> – Technical Certificate, General Education (2022)<br><em>Merit Scholarship Recipient</em></p>
   </section>
 
   <section class="projects">
     <h2>Projects</h2>
-    <div class="projects-container">
-      <a href="https://lewlaratbwa.com.br/trabalhos/swift-loves-travis/" target="_blank">
-        <img src="project1.png" alt="Swift Loves Travis Campaign">
-      </a>
-      <a href="https://lewlaratbwa.com.br/trabalhos/piraque-maltadao-ludmilla/" target="_blank">
-        <img src="project2.png" alt="Piraque Ludmilla Campaign">
-      </a>
-    </div>
+    <a href="https://lewlaratbwa.com.br/trabalhos/swift-loves-travis/" target="_blank">
+      <img src="project1.png" alt="Swift Loves Travis Campaign">
+    </a>
+    <a href="https://lewlaratbwa.com.br/trabalhos/piraque-maltadao-ludmilla/" target="_blank">
+      <img src="project2.png" alt="Piraque Maltadão Ludmilla Campaign">
+    </a>
   </section>
 
   <section class="resume">
     <h2>Resume</h2>
-    <a class="resume-button" href="Jackson_Cordeiro_Machado_Resume.pdf" download>Download My Resume</a>
+    <a class="resume-button" href="Jackson_Cordeiro_Machado_Resume_for_Applications professional (marketing).pdf" target="_blank">Download My Resume</a>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jackson.machado@email.com">jackson.machado@email.com</a></p>
-    <p class="social">Instagram: <a href="https://instagram.com/luccascrdm" target="_blank">@luccascrdm</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Jackson Machado. All rights reserved.</p>
+  <footer class="contact">
+    <p>Contact: <a href="mailto:jackson.lucas.cordeiro@gmail.com">jackson.lucas.cordeiro@gmail.com</a> | <a href="https://instagram.com/luccascrdm" target="_blank">Instagram</a></p>
+    <p>© 2024 Jackson Machado. Built with ♥ and GitHub Pages.</p>
   </footer>
 </body>
 </html>
