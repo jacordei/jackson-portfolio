@@ -1,146 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jackson Machado's portfolio showcasing education, creative campaigns, and resume.">
-  <meta name="author" content="Jackson Machado">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jackson Machado's professional portfolio showcasing education, projects, and resume." />
   <title>Jackson Machado – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #fdf1c9;
-      --primary: #f24c4c;
-      --text: #222;
-      --white: #fff;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg);
-      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      color: #333;
+      padding: 20px;
     }
     header {
-      background: var(--bg);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 20px 0;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
-    header p {
-      font-size: 1.25rem;
-      margin: 0.5rem 0;
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 0.5em;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: var(--white);
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      color: var(--text);
+    h2 {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
     }
     section {
-      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
     }
-    .projects img {
-      width: 100%;
-      max-width: 300px;
+    .education img, .projects img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .education p, .projects p {
+      margin-bottom: 10px;
+    }
+    .projects-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .projects-container a img {
+      width: 250px;
+      height: 140px;
       border-radius: 10px;
-      margin: 1rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      transition: transform 0.3s;
     }
-    .resume-btn, button {
+    .projects-container a:hover img {
+      transform: scale(1.05);
+    }
+    .resume-button {
       display: inline-block;
-      background: var(--primary);
-      color: var(--white);
-      padding: 0.75rem 1.25rem;
-      border: none;
-      border-radius: 5px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
       text-decoration: none;
-      cursor: pointer;
-      margin-top: 1rem;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    .contact, .about {
+      margin-top: 30px;
+    }
+    .social a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
     }
     footer {
       text-align: center;
-      padding: 2rem;
-      background: var(--white);
-    }
-    .social-icons a {
-      margin: 0 10px;
-      color: var(--text);
-      font-size: 1.5rem;
-    }
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-      }
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="IMG_1655.jpg" alt="Jackson Machado Profile Picture">
+    <h1>Jackson Machado – Portfolio</h1>
+  </header>
 
-<header>
-  <img src="IMG_1655.jpg" alt="Jackson Machado" style="width:120px; border-radius: 50%;">
-  <h1>Jackson Machado</h1>
-  <p>Creative Communicator | Digital Storyteller | Marketing Strategist</p>
-</header>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m Jackson Machado, a passionate communicator and digital strategist with international academic and work experience across Brazil and the U.S. I specialize in political science, marketing, and storytelling. With hands-on campaign work at Lew’Lara\TBWA and academic research in communication, I bring a global perspective and energy to every project I lead or support.</p>
+  </section>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <section class="education">
+    <h2>Education</h2>
+    <p><img src="purdue-logo.png" alt="Purdue"> <strong>Purdue University</strong> – Master of Science in Communication (Expected 2025)</p>
+    <p><img src="iupui-logo.png" alt="IUPUI"> <strong>IUPUI</strong> – Bachelor of Arts in Political Science (2024)<br><em>Dean’s List, GPA: 3.83</em></p>
+    <p><img src="ivytech-logo.png" alt="Ivy Tech"> <strong>Ivy Tech Community College</strong> – Technical Certificate, General Education (2022)<br><em>Merit Scholarship Recipient</em></p>
+  </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I'm a Brazilian-American creative professional with a background in political science and communication. With a passion for storytelling, brand strategy, and visual content, I've worked on digital campaigns at Lew'Lara\TBWA and am pursuing a Master's degree in Communication at Purdue University. I love transforming ideas into engaging experiences.</p>
-</section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <a href="https://lewlaratbwa.com.br/trabalhos/swift-loves-travis/" target="_blank">
+        <img src="project1.png" alt="Swift Loves Travis Campaign">
+      </a>
+      <a href="https://lewlaratbwa.com.br/trabalhos/piraque-maltadao-ludmilla/" target="_blank">
+        <img src="project2.png" alt="Piraque Ludmilla Campaign">
+      </a>
+    </div>
+  </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <p><strong>Purdue University</strong> – Master of Science in Communication (Expected 2025)</p>
-  <p><strong>IUPUI</strong> – Bachelor of Arts in Political Science (2024) <br><em>Dean’s List, GPA: 3.83</em></p>
-  <p><strong>Ivy Tech Community College</strong> – Technical Certificate, General Education (2022)<br><em>Merit Scholarship Recipient</em></p>
-</section>
+  <section class="resume">
+    <h2>Resume</h2>
+    <a class="resume-button" href="Jackson_Cordeiro_Machado_Resume.pdf" download>Download My Resume</a>
+  </section>
 
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <a href="https://lewlaratbwa.com.br/trabalhos/swift-loves-travis/" target="_blank">
-    <img src="project1.png" alt="Swift Loves Travis Campaign">
-  </a>
-  <a href="https://lewlaratbwa.com.br/trabalhos/piraque-maltadao-ludmilla/" target="_blank">
-    <img src="project2.png" alt="Piraqué Maltadão Ludmilla Campaign">
-  </a>
-</section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jackson.machado@email.com">jackson.machado@email.com</a></p>
+    <p class="social">Instagram: <a href="https://instagram.com/luccascrdm" target="_blank">@luccascrdm</a></p>
+  </section>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <a class="resume-btn" href="resume.pdf" download>📄 Download My Resume</a>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required><br><br>
-    <input type="email" name="email" placeholder="Your Email" required><br><br>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<footer>
-  <p>Follow me on:</p>
-  <div class="social-icons">
-    <a href="https://instagram.com/luccascrdm" target="_blank">📸 Instagram</a>
-  </div>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Jackson Machado. All rights reserved.</p>
+  </footer>
 </body>
 </html>
